@@ -7,15 +7,20 @@
 
 module.exports = {
 
-
     /**
-     * `BearsController.index()`
+     * Fetches the bears
+     * @param  {[type]}
+     * @param  {[type]}
+     * @return {[type]}
      */
-    index: function (req, res) {
+    index: function(req, res)
+    {
         Bear.find()
-            .exec(function (err, bears) {
+            .exec(function(err, bears)
+            {
 
-                return res.view('bears/index', {
+                return res.view('bears/index',
+                {
                     bears: bears,
                 })
 
@@ -26,12 +31,16 @@ module.exports = {
     /**
      * `BearsController.show()`
      */
-    show: function (req, res) {
-        Bear.create({
-            name: 'Albin'
-        })
-            .exec(function (err, bear) {
-                return res.json({
+    show: function(req, res)
+    {
+        Bear.create(
+            {
+                name: 'Albin'
+            })
+            .exec(function(err, bear)
+            {
+                return res.json(
+                {
                     ok: 'ok'
                 })
             });
@@ -41,8 +50,10 @@ module.exports = {
     /**
      * `BearsController.edit()`
      */
-    edit: function (req, res) {
-        return res.json({
+    edit: function(req, res)
+    {
+        return res.json(
+        {
             todo: 'edit() is not implemented yet!'
         });
     },
@@ -51,10 +62,11 @@ module.exports = {
     /**
      * `BearsController.delete()`
      */
-    delete: function (req, res) {
-        return res.json({
+    delete: function(req, res)
+    {
+        return res.json(
+        {
             todo: 'delete() is not implemented yet!'
         });
     }
 };
-
