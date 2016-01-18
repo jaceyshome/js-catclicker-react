@@ -9,9 +9,9 @@ gulp.task('templates', function(){
         .pipe(handlebars())
         .pipe(wrap('Handlebars.template(<%= contents %>)'))
         .pipe(declare({
-            namespace: 'MyApp.templates',
+            namespace: 'myApp.templates',
             noRedeclare: true, // Avoid duplicate declarations
         }))
         .pipe(concat('templates.js'))
-        .pipe(gulp.dest('build/js/'));
+        .pipe(gulp.dest('public/js/'));
 });

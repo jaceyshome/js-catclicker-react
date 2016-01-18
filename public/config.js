@@ -17,6 +17,7 @@ System.config({
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
+    "handlebars": "github:components/handlebars.js@1.3.0",
     "handlebars-react": "github:stevenvachon/handlebars-react@master",
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",
     "react": "npm:react@0.14.6",

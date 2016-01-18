@@ -1,5 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Templates from 'js/templates';
+console.log("Templates", myApp);
 
 var TodoList = React.createClass({
     displayName: 'TodoList',
@@ -59,5 +61,5 @@ var TodoApp = React.createClass({
 });
 
 var div = document.createElement('div');
-React.render(React.createElement(TodoApp, null), div);
+ReactDOM.render(React.createElement(TodoApp, null), div);
 document.body.appendChild(div);
