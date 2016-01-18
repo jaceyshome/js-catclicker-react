@@ -13,6 +13,7 @@
     "serve-static": "1.8.1"
   },
   "devDependencies": {
+    "handlebars-react": "git+https://github.com/stevenvachon/handlebars-react.git",
     "jspm": "0.10.6"
   },
   "scripts": {

@@ -9,6 +9,7 @@ System.config({
 
 System.config({
   "map": {
+    "handlebars-react": "github:stevenvachon/handlebars-react@master",
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",
     "react": "npm:react@0.13.3",
     "github:floatdrop/plugin-jsx@1.1.0": {
