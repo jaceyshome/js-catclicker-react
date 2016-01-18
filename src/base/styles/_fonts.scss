@@ -1,8 +1,0 @@
-@import "_variables";
-@import "_mixins";
-@import "_functions";
-
-@include font('OpenSansRegular', 'opensans-regular', '#{$fontDirectory}', $fontWeightRegular);
-@include font('OpenSansLight', 'opensans-light', '#{$fontDirectory}', $fontWeightRegular);
-@include font('OpenSansSemibold', 'opensans-semibold', '#{$fontDirectory}', $fontWeightRegular);
-@include font('OpenSansBold', 'opensans-bold', '#{$fontDirectory}', $fontWeightRegular);
