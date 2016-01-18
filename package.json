@@ -1,34 +1,54 @@
 {
-  "name": "systemjs-es6-react-boilerplate",
+  "name": "js-catclicker-react",
   "version": "0.1.1",
-  "description": "a sample app in es6 making use of systemjs, react, jspm",
+  "description": "a sample app for the react experiment ",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lalitkapoor/react-systemjs-es6-boilerplate.git"
+    "url": "https://github.com/jaceyshome/js-catclicker-react.git"
   },
-  "dependencies": {
-    "express": "4.12.4",
-    "finalhandler": "0.3.3",
-    "serve-static": "1.8.1"
-  },
+  "author": "The University of Sydney",
   "devDependencies": {
-    "jspm": "0.10.6"
+    "browser-sync": "^1.8.1",
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-babel": "^5.1.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-changed": "^1.1.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-protractor": "^0.0.12",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-yuidoc": "^0.1.2",
+    "jasmine-core": "^2.1.3",
+    "jshint-stylish": "^1.0.0",
+    "jspm": "~0.16.22",
+    "object.assign": "^1.0.3",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "vinyl-paths": "^1.0.0",
+    "yargs": "^2.1.1",
+    "gulp-yaml": "~1.0.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "postinstall": "./node_modules/.bin/jspm install"
-  },
-  "author": "Lalit Kapoor <lalitkapoor@gmail.com>",
-  "license": "MIT",
   "jspm": {
-    "directories": {
-      "baseURL": "public"
-    },
     "dependencies": {
-      "jsx": "1.1.0",
-      "react": "0.13.3"
+      "core-js": "npm:core-js@^0.9.4",
+      "jquery": "github:components/jquery@1",
+      "json": "github:systemjs/plugin-json@^0.1.0",
+      "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
+      "react": "npm:react@^0.14.6",
+      "react-dom": "npm:react-dom@^0.14.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "compass-mixins": "npm:compass-mixins@^0.12.7",
+      "handlebars": "github:components/handlebars.js@^4.0.5",
+      "jqueryui": "github:components/jqueryui@1.11.2",
+      "modernizr": "github:Modernizr/Modernizr@^3.3.0",
+      "respond": "github:scottjehl/Respond@^1.4.2"
     }
   }
 }

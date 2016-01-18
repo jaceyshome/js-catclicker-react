@@ -5,7 +5,7 @@ var finalhandler = require('finalhandler')
 
 var port = process.env.PORT || 3000
 
-var static = serveStatic('public', {'index': ['index.html']})
+var static = serveStatic('dist', {'index': ['index.html']})
 
 var app = express()
 app.use(static)
