@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Templates from 'js/templates';
-console.log("Templates", myApp);
+import HandlebarsReact from "stevenvachon/handlebars-react/lib/index";
+
+console.log("Templates", myApp.templates);
+var catList = new HandlebarsReact().compile(myApp.templates['cat-list']).then(function(result){
+    console.log("result", result);
+})
 
 var TodoList = React.createClass({
     displayName: 'TodoList',
