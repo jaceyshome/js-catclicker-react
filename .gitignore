@@ -1,3 +1,9 @@
 .tmp
 node_modules
 .idea
+bower_components
+.idea
+.DS_STORE
+*.iml
+dist/
+

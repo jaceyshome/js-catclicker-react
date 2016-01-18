@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
@@ -22,3 +23,4 @@ gulp.task('compress', function()
 });
 
 gulp.task('default', ['scripts']);
+
